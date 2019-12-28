@@ -1,5 +1,5 @@
 # It Is Cold Outside?
->"Wow, I'll never have to leave my house _again!_"- You
+>"Wow, I'll never have to leave my house _again!_" -You, probably
 
 A simple vanilla JavaScript Application that utilizes Google Maps &amp; IP API to show the users location, basic weather information, and also if it's cold out. 
 
