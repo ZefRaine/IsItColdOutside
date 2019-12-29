@@ -1,4 +1,4 @@
-function myFunction() {
+function snowSpinner() {
 
 var element = document.getElementById("spinner");
     element.classList.add("spinning");
