@@ -18,6 +18,14 @@ body {
     text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
 }
 
+.container {
+    background: #3757d67e;
+    border-radius: 25px;
+    padding: 1.75rem;
+    border: 2px solid black;
+    filter: blur(center);
+    margin-bottom: 1rem;
+}
 .degree-section {
     display: flex;
     align-items: center;
@@ -40,6 +48,7 @@ body {
 .degree-section {
     font-family: 'Quicksand', sans-serif;
     font-size: 2rem;
+    text-align: center;
 }
 
 .location {
@@ -48,6 +57,9 @@ body {
     align-items: center;
 }
 
+.fa-snowflake{
+    margin-bottom: 3rem;
+}
 .location-timezone {
     font-family: 'Lobster', cursive;
     font-size: 4rem;
@@ -104,6 +116,9 @@ p {
 }
 
 @media only screen and (max-width: 320px) {
+    .container {
+        padding: 1rem;
+    }
     .header {
         font-size: 3.25rem;
         margin-top: 0;
@@ -115,11 +130,15 @@ p {
     .fa-snowflake{
         font-size: 12.5rem;
     }
+    .fa-snowflake{
+        margin-bottom: 2rem;
+    }
     .location-timezone{
         font-size: 2.5rem;
     }
     .weather-icon, 
-    .temperature-degree{
+    .temperature-degree,
+    .temperature-description{
         font-size: 1.75rem;
     }
 }
