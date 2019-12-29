@@ -7,6 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Is it Cold Outside?</title>
     <script src="logic.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://kit.fontawesome.com/163c34f4da.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
     <link href="https://fonts.googleapis.com/css?family=Lobster|Quicksand&display=swap" rel="stylesheet">
@@ -18,6 +19,15 @@
     <div onclick="myFunction()" id="spinner">
         <i class="fas fa-snowflake"></i>
     </div>
+    <div class="location">
+        <h1 class="location-timezone">Timezone</h1>
+        <p class="weather-icon">Icon</p>
+    </div>
+    <div class="temperature">
+        <h2 class="temperature-degree">34<span>°F</span></h2>
+        <div class="temperature-description"></div>
+    </div>
+    <script src="app.js"></script>
 </body>
 
 </html>
