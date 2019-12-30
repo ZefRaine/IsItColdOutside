@@ -40,6 +40,14 @@ body {
 
 .temperature {
     flex-direction: column;
+    display: flex;
+    align-items: center;
+}
+
+.temperature-section {
+    display: flex;
+    align-items: center;
+    align-content: center;
 }
 
 .tag,
@@ -131,7 +139,12 @@ p {
     }
 
     .location-timezone {
-        font-size: 5rem;
+        font-size: 4rem;
+    }
+    .tag,
+    .temperature-degree,
+    .temperature-description {
+        font-size: 3rem;
     }
 }
 @media only screen and (max-width: 760px) {
