@@ -15,13 +15,13 @@ window.addEventListener('load', () => {
     let temperatureDescription = document.querySelector('.temperature-description');
     let temperatureDegree = document.querySelector('.temperature-degree');
     let locationTimezone = document.querySelector('.location-timezone');
-    let weatherIcon = document.querySelector('.weather-icon');
+    const temperatureSection = document.querySelector('.temperature-section span');
+    const temperatureSpan = document.querySelector('.temperature')
 
     if (navigator.geolocation) {
         navigator.geolocation.getCurrentPosition(position => {
             long = position.coords.longitude;
             lat = position.coords.latitude;
-            // console.log(position);
             const proxy = "https://cors-anywhere.herokuapp.com/";
             const api = `${proxy}https://api.darksky.net/forecast/850c368d3350078f8de9eb606bb72207/${lat},${long}`;
 
@@ -30,7 +30,6 @@ window.addEventListener('load', () => {
                     return response.json();
                 })
                 .then(data => {
-                    console.log(data);
                     const {
                         temperature,
                         summary,
@@ -40,8 +39,24 @@ window.addEventListener('load', () => {
                     temperatureDegree.textContent = temperature;
                     temperatureDescription.textContent = summary;
                     locationTimezone.textContent = data.timezone;
+                    //Set Icons
+                    setIcons(icon, document.querySelector(".icon"));
 
+                    //Change temperature from fahrenheit to celsius
+
+                    temperatureSection.addEventListener('click', function () {
+
+                    })
                 });
         });
+    }
+
+    function setIcons(icon, iconID) {
+        const skycons = new Skycons({
+            color: "white"
+        });
+        const currentIcon = icon.replace(/-/g, "_").toUpperCase();
+        skycons.play();
+        return skycons.set(iconID, Skycons[currentIcon]);
     }
 });
