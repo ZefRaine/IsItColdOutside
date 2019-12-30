@@ -106,33 +106,6 @@ p {
     color: #3757d6;
     cursor: pointer;
 }
-@media only screen and (min-width: 1500px) {
-    .tag {
-        margin-bottom: 2rem;
-    }
-
-    .icon {
-        width: 5rem;
-        height: 5rem;
-    }
-
-    .container {
-        margin-top: 2rem;
-    }
-
-    .fa-snowflake {
-        font-size: 8rem;
-    }
-
-    .header {
-        font-size: 4rem;
-        margin-top: 0;
-    }
-
-    .location-timezone {
-        font-size: 2.5rem;
-    }
-}
 @media only screen and (min-width: 760px) {
     .tag {
         font-size: 3rem;
@@ -159,6 +132,33 @@ p {
 
     .location-timezone {
         font-size: 5rem;
+    }
+}
+@media only screen and (max-width: 760px) {
+    .tag {
+        margin-bottom: 2rem;
+    }
+
+    .icon {
+        width: 5rem;
+        height: 5rem;
+    }
+
+    .container {
+        margin-top: 2rem;
+    }
+
+    .fa-snowflake {
+        font-size: 8rem;
+    }
+
+    .header {
+        font-size: 4rem;
+        margin-top: 0;
+    }
+
+    .location-timezone {
+        font-size: 2.5rem;
     }
 }
 
