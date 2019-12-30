@@ -25,7 +25,9 @@ body {
     border: 2px solid black;
     filter: blur(center);
     margin-bottom: 1rem;
+    margin-top: 4rem;
 }
+
 .degree-section {
     display: flex;
     align-items: center;
@@ -41,6 +43,7 @@ body {
     flex-direction: column;
 }
 
+.tag,
 .temperature,
 .temperature-degree,
 .location,
@@ -53,31 +56,22 @@ body {
 
 .location {
     justify-content: space-around;
-    font-size: 4rem;
     align-items: center;
 }
 
-.fa-snowflake{
-    margin-bottom: 3rem;
-}
-.location-timezone {
+.location-timezone,
+.header {
     font-family: 'Lobster', cursive;
     font-size: 4rem;
 }
 
 .header {
-    font-family: 'Lobster', cursive;
-    color: #ffffff;
     text-align: center;
     font-size: 5rem;
     margin-top: 5rem;
 }
 
 .tag {
-    font-family: 'Quicksand', sans-serif;
-    color: #ffffff;
-    text-align: center;
-    font-size: 2rem;
     margin-bottom: 4rem;
 }
 
@@ -106,7 +100,7 @@ body {
 
 p {
     font-family: verdana;
-    font-size: 20px;
+    font-size: 2rem;
 }
 
 .fa-snowflake {
@@ -118,27 +112,31 @@ p {
 @media only screen and (max-width: 320px) {
     .container {
         padding: 1rem;
+        margin-top: 2rem;
     }
+
     .header {
         font-size: 3.25rem;
         margin-top: 0;
     }
+
     .tag {
-        font-size: 1.75rem;
         margin-bottom: 2rem;
     }
-    .fa-snowflake{
+
+    .fa-snowflake {
         font-size: 12.5rem;
     }
-    .fa-snowflake{
-        margin-bottom: 2rem;
-    }
-    .location-timezone{
+
+
+    .location-timezone {
         font-size: 2.5rem;
     }
-    .weather-icon, 
+
+    .tag,
+    .weather-icon,
     .temperature-degree,
-    .temperature-description{
+    .temperature-description {
         font-size: 1.75rem;
     }
 }

@@ -4,9 +4,10 @@ function myFunction() {
     name = "spinning";
     arr = element.className.split(" ");
     if (arr.indexOf(name) == -1) {
-      element.className += " " + name;
+        element.className += " " + name;
     } else element.className -= " " + name;
-  }
+}
+
 window.addEventListener('load', () => {
     let long;
     let lat;
