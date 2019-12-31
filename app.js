@@ -56,7 +56,7 @@ window.addEventListener('load', () => {
                 });
         });
     }
-
+    // Skycons API
     function setIcons(icon, iconID) {
         const skycons = new Skycons({
             color: "white"
